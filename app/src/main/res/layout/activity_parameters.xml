@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qut.cusumalgorithm.parameters">
+
+    <SeekBar
+        android:id="@+id/seekBar8"
+        android:layout_width="166dp"
+        android:layout_height="21dp"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threshold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PostMeanRoll"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="167dp"
+        android:layout_height="19dp"
+        tools:layout_editor_absoluteY="14dp"
+        tools:layout_editor_absoluteX="201dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="166dp"
+        android:layout_height="21dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:layout_editor_absoluteX="202dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar6"
+        android:layout_width="166dp"
+        android:layout_height="21dp"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar7"
+        android:layout_width="166dp"
+        android:layout_height="21dp"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PostMeanYaw"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PostMeanPitch"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="112dp"
+        android:layout_height="20dp"
+        android:text="Change Detected"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="175dp" />
+</android.support.constraint.ConstraintLayout>

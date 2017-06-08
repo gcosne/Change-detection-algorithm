@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qut.cusumalgorithm.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threshold"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="33dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/seekBar2"
+        android:layout_toRightOf="@+id/seekBar2"/>
+
+    <TextView
+        android:id="@+id/changeDetected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:text="NoChangeDetected"
+        android:layout_alignEnd="@+id/seekBarThreshold22"
+        android:layout_alignRight="@+id/seekBarThreshold22"
+        android:layout_alignBottom="@+id/nbSamples"
+        android:layout_alignLeft="@+id/seekBarThreshold22"
+        android:layout_alignStart="@+id/seekBarThreshold22" />
+
+    <TextView
+        android:id="@+id/cusum"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:text="CUSUM"
+        android:layout_alignBaseline="@+id/stdPitchs"
+        android:layout_alignBottom="@+id/stdPitchs"
+        android:layout_alignStart="@+id/changeDetected"
+        android:layout_alignLeft="@+id/changeDetected" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:layout_above="@+id/fixedlayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/fluidlayout"
+            android:layout_above="@+id/fixedlayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp">
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:id="@+id/fixedlayout"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!--  we add graphview to display -->
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:id="@+id/graph" />
+
+            <!--  end graphview to display -->
+
+        </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarThreshold22"
+        android:layout_width="160dp"
+        android:layout_height="15dp"
+        android:layout_alignStart="@+id/textViewThreshold"
+        android:layout_alignLeft="@+id/textViewThreshold"
+        android:layout_below="@+id/textViewThreshold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_alignBottom="@+id/seekBar2" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="160dp"
+        android:layout_height="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewThreshold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="PitchRate"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/nbSamples"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nbSamples"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/stdPitchs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/meanPitchs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mean"
+        android:layout_above="@+id/fluidlayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="37dp" />
+
+    <TextView
+        android:id="@+id/stdPitchs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Std"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/meanPitchs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <SeekBar
+        android:id="@+id/seekBarMeanPitchAfterChange"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textViewMeanPitchAfterChange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textViewMeanPitchAfterChange"
+        android:layout_alignEnd="@+id/textViewMeanPitchAfterChange" />
+
+    <TextView
+        android:id="@+id/textViewMeanPitchAfterChange"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:text="MeanPitchAfterChange"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/seekBar2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
